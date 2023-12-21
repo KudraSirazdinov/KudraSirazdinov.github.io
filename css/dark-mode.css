@@ -1,0 +1,214 @@
+body {
+    padding: 0; /*внутренний отступ*/
+    margin: 0; /*внешний отступ*/
+    font-family: 'Anton', sans-serif; /*придает шрифт*/
+    color: white;
+    font-size: 16px; /*придает размер шрифта */
+    background-color: #373737;
+}
+
+* {
+    box-sizing: border-box; /*для высоты и ширины элемента*/
+} 
+ 
+h1, h2, h3, h4, h5,h6 {
+    font-weight: normal; /*толщина шрифта*/
+    padding: 0; /*внутренний отступ*/
+    margin: 100; /*внешний отступ*/
+    text-transform: uppercase; /*весь текст большими буквами*/
+}
+
+h2 {
+    font-size: 50px; /*придает размер шрифта */
+    font-style: normal; /*обычное начертание текста*/ 
+    font-weight: 400; /*толщина шрифта*/
+    line-height: normal;  /*означает, что браузер может принимать решение о размере строки самостоятельно*/
+    text-transform: uppercase; /*весь текст большими буквами*/
+    margin-top: 113px; /*внешний верхний отступ*/
+    
+}
+h3 {
+    color: white;
+    font-family: "Anton"; /*придает шрифт*/
+    font-size: 25px; /*придает размер шрифта */
+    font-style: normal; /*обычное начертание текста*/ 
+    font-weight: 400;/*толщина шрифта*/
+    line-height: normal; /*означает, что браузер может принимать решение о размере строки самостоятельно*/
+    text-transform: uppercase; /*весь текст большими буквами*/
+}
+ui, li {
+    display: block;  /*элементы списка отображаются один под другим на странице*/
+    padding: 0; /*внутренний отступ*/
+    margin: 0; /*внешний отступ*/
+}
+
+.container {
+    width: 1170px;  /*ширина элемента*/
+
+    margin: 0 auto; /*внешний отступ*/
+}
+
+.header {
+    background: url('../img/header-bg.jpg') no-repeat center top / cover; /*Задний фон с главной картинкой, cover используется чтоб на всем экране была фотография*/
+    padding-top: 57px; /*внутренний отступ сверху*/
+    color: white;
+    padding-bottom: 322px; /*внутренний отступ снизу*/
+}
+
+header a {
+    color: #fff;
+}
+
+.logo {
+    margin-right: 69px; /*внешний отступ справа*/
+}
+
+.menu {
+    display: flex;;
+}
+
+.menu li a {
+    text-transform: uppercase; /*весь текст большими буквами*/
+    text-decoration: none; /*убирает вышеперечисленные эффекты*/
+    font-size: 14px; /*придает размер шрифта */
+    letter-spacing: 0.1em; /*межбуквенный интервал*/
+}
+
+.menu li {
+    margin-right: 40px; /*внешний отступ справа*/
+}
+
+.tel {
+    font-size: 17px; /*придает размер шрифта */
+    margin-left: auto; /*внешний отступ слева*/
+    letter-spacing: 0.1em; /*межбуквенный интервал*/
+    text-decoration: none; /*убирает вышеперечисленные эффекты*/
+}
+
+.nav {
+    display: flex;
+    align-items: center; /*выравнивает элементы*/
+}
+
+.offer {
+    text-transform: uppercase; /*весь текст большими буквами*/
+    margin-top: 216px; /*внешний верхний отступ*/
+}
+
+.offer p {
+    font-size: 30px; /*придает размер шрифта */
+    letter-spacing: 0.1em; /*межбуквенный интервал*/
+}
+
+.offer h1 {
+    font-size: 100px; /*придает размер шрифта */
+    margin-bottom: 19px; /*внешний нижний отступ*/
+    margin-top: -9px; /*внешний верхний отступ*/
+    letter-spacing: 0.02em;  /*межбуквенный интервал*/
+}
+
+.btn {
+    display: block;
+    font-size: 17px; /*придает размер шрифта */
+    text-decoration-line: none;
+    letter-spacing: 0.1em; /*межбуквенный интервал*/
+    padding: 17px 47px; /*внутренний отступ*/
+    border: 1px solid #fff; /*граница рамки и цвет*/
+    width: 238px; /*ширина элемента*/
+}
+
+.description {
+    display: flex;
+    justify-content: space-between; /*расстояния между соседними элементами одинаковые*/
+}
+
+.description p {
+    font-family: 'Open Sans', sans-serif; /*придает шрифт*/
+    font-weight: 400; /*толщина шрифта*/
+    text-align: justify; /*выравнивание по ширине*/
+    line-height: 1.62em; /*устанавливает величину пространства между строками*/
+}
+
+.desc-left, .desc-right {
+    width: 567px; /*ширина элемента*/
+}
+
+.gallery {
+    margin-top: 67px; /*внешний верхний отступ*/
+    display: flex;
+    justify-content: space-between; /*расстояния между соседними элементами одинаковые*/
+}
+
+.footer-text{
+    font-size: 15px; /*придает размер шрифта */
+    font-family: 'Open Sans', sans-serif;  /*придает шрифт*/
+    display: flex;
+    padding: 114px; /*внутренний отступ*/
+}
+
+.footer-text p {
+    margin-right: 67px; /*внешний отступ спрва*/
+}
+
+form {
+    text-align: center; /*выровнен по центру*/
+    margin: 20px auto; /*внешний отступ*/
+    font-family: 'Open Sans'; /*придает шрифт*/
+    font-weight: 300; /*толщина шрифта*/ 
+    font-size: 15px;  /*придает размер шрифта */
+}
+  
+
+input {
+    border-radius: 100px; /*закругление углов рамки*/
+    border: 1px solid #ccc; /*рамка*/
+    margin-left: 20px; /*внешний отступ слева*/
+    padding: 4px; /*внутренний отступ*/
+    margin-bottom: 20px; /*внешний нижний отступ*/
+    font-family: 'Open Sans'; /*применение шрифта open sans*/
+    width: 300px; /*ширина элемента*/
+}
+  
+  label {
+    width: 100px; /*ширина элемента*/
+    display: inline-block;
+}
+
+fieldset {
+    width: 600px; 
+    border: 1.5px solid white;
+    border-radius: 5px;
+    margin: auto;
+}
+.form_button{
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+    color: black;
+    background-color: #0071f0;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+    
+.form_button:focus,.form_button:hover {
+    background-color: rgba(0, 240, 192, 0.6);
+}
+ 
+button {
+    
+    padding: 8px;
+    background-color: white;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    margin-top: 1%;
+    outline: none;
+
+}
+button:hover {
+    background: rgb(45, 50, 102);
+}
+
+
